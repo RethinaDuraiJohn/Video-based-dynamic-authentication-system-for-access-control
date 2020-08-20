@@ -1,0 +1,30 @@
+   {% extends 'temp1.html' %}
+
+{% block content %}
+  <h3>Request Page</h3>
+
+
+<!-- <a href="{%  url 'index'%}" class="btn btn-primary">Back</a> -->
+
+<form method = "post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <!-- <img src="/media/images/newvisitors/photo.jpg" height="100" width="100"> -->
+
+    <button type="submit"  >Upload</button>
+</form>
+
+<a href="{%  url 'index' %}" class="btn btn-primary">Back</a>
+
+</div>
+
+
+<script>
+function myFunction() {
+  alert("Request Sent !");
+  window.location.href = "dashboard.html";
+}
+</script>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'temp2.html' %}
+
+{% block content %}
+
+  <h3>New visitors</h3>
+
+<div class="container">
+
+
+  {% for i in img %}
+  <img class="img-fluid" src="../media/{{ i }}" alt="Chania" width="460" height="345"> <br><br><br>
+  {% endfor %}
+
+</div>
+</table>
+{% endblock %}

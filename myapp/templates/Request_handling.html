@@ -1,0 +1,75 @@
+   {% extends 'temp.html' %}
+
+{% block content %}
+
+	  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+		<style>
+	table, th, td {
+	  border: 1px solid black;
+	}
+	</style>
+
+
+<h3>Request Status for new visitors</h3>
+<table style="width:100%">
+		<tr>
+				<th>Name</th>
+				<th>Time Stamp</th>
+				<th>Phone</th>
+				<th>Photo</th>
+					<th>Intended Inmate</th>
+				<th>Status</th>
+				<th> AAA</th>
+				<th>Action</th>
+        <th>Add to Friends List </th>
+		</tr>
+
+{% for student in details %}
+<tr>
+	<td>  {{ student.name}}   </td>
+		<td>  {{ student.date}}   </td>
+<td>    {{ student.phone }} </td>
+<td>    <img src="{{ student.upload_Main_Img.url }}" height="100" width="100" /> </td>
+<td>{{student.visiname}} </td>
+<td>{{ student.status}} </td>
+<td>{{ student.id}} </td>
+
+
+<td>
+	<form method="POST">
+      {%csrf_token%}
+    <input type="hidden" name="student_id" value={{ student.id }}>
+    <input type="submit" value="reject" name="reject">
+    <input type="submit" value="accept" name="accept">
+  </form>
+</td>
+
+<td>
+
+  <form method="POST" onsubmit="return checkForm(this);" >
+      {%csrf_token%}
+  <input type="hidden" name="student_id" value={{ student.id }}>
+<input type="submit" value="Add as friend" name="Add as friend"   >
+
+</form>
+
+</td>
+
+	</tr>
+{% endfor %}
+</table>
+
+<br><br>
+
+<a href="{%  url 'index'%}" class="btn btn-primary">Back</a>
+
+{% endblock %}

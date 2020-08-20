@@ -1,0 +1,24 @@
+{% extends 'temp1.html' %}
+
+{% block content %}
+  <h2>Inmates</h2>
+  <a href="{%  url 'index'%}" class="btn btn-primary">Back</a>
+
+
+<ul>
+  {% for link in links %}
+      <li>{{ link }}</li>
+  {% endfor %}
+
+</ul>
+Inmate identified - model prediction
+<br>
+if not
+<br> use password auth <br>
+  <a href="/passvalidate/" class="btn btn-primary">2-way authenticate</a>
+
+    <a href="{%  url 'index'%}" class="btn btn-primary">Back</a>
+</div>
+
+
+{% endblock %}

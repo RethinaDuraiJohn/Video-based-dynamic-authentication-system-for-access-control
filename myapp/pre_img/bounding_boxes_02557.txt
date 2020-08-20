@@ -1,0 +1,25 @@
+./pre_img\ilaya\User_51.png 736 264 1142 745
+./pre_img\ilaya\User_52.png 922 252 1288 742
+./pre_img\ilaya\User_53.png 403 622 529 787
+./pre_img\ilaya\User_54.png 1036 347 1424 835
+./pre_img\ilaya\User_55.png 844 396 1192 868
+./pre_img\ilaya\User_56.png 445 425 629 673
+./pre_img\ilaya\User_57.png
+./pre_img\ilaya\User_58.png 229 157 397 373
+./pre_img\ilaya\User_59.png 199 127 500 509
+./pre_img\ilaya\User_60.png 143 355 505 848
+./pre_img\ilaya\User_61.png 30 466 403 942
+./pre_img\ilaya\User_62.png 378 231 544 450
+./pre_img\ilaya\User_63.png 254 415 384 584
+./pre_img\ilaya\User_64.png 283 359 376 489
+./pre_img\ilaya\User_65.png 784 1562 1144 1902
+./pre_img\ilaya\User_66.png 474 444 934 1074
+./pre_img\ilaya\USer_67.png 592 303 845 536
+./pre_img\ilaya\User_68.png 307 531 546 831
+./pre_img\ilaya\User_69.png 215 151 401 438
+./pre_img\ilaya\User_70.png 234 92 444 371
+./pre_img\ilaya\User_71.png 646 958 1444 2005
+./pre_img\ilaya\User_72.png 682 709 1287 1543
+./pre_img\ilaya\User_73.png 670 681 1272 1484
+./pre_img\ilaya\User_74.png 690 935 1335 1795
+./pre_img\ilaya\User_75.png 61 160 429 606

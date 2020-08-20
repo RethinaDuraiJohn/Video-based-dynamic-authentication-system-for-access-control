@@ -1,0 +1,29 @@
+{% extends 'temp2.html' %}
+
+{% block content %}
+  <h3>Request Status for new visitors</h3>
+  <table style="width:100%">
+      <tr>
+          <th>Name</th>
+          <th>Time Stamp</th>
+          <th>Phone</th>
+          <th>Photo</th>
+            <th>Intended Inmate</th>
+          <th>Status</th>
+      </tr>
+
+  {% for student in details %}
+  <tr>
+    <td>  {{ student.name}}   </td>
+      <td>  {{ student.date}}   </td>
+  <td>    {{ student.phone }} </td>
+  <td>    <img src="{{ student.upload_Main_Img.url }}" height="42" width="42" /> </td>
+<td>{{student.visiname}} </td>
+<td> {{student.status}} </td>
+
+    </tr>
+  {% endfor %}
+</table>
+
+<a href="{%  url 'index'%}" class="btn btn-primary">Back</a>
+{% endblock %}
